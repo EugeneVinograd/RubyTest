@@ -9,5 +9,10 @@ names.each do |name|
 end
 
 3.times do
-  printf 'hi'
+  puts 'hi'
 end
+food = ['a', ['g', 'h'], 'c', 'd']
+def mo number
+  puts 'moooooo...' * number
+end
+mo 2
