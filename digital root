@@ -1,0 +1,37 @@
+def digital_root (n)
+  count = 0
+  arr = n.to_s.split(//).each {|x| count += x.to_i}
+  if count.to_s.split(//).length > 1
+    digital_root (count)
+  else
+    count
+  end
+end
+
+puts digital_root (999999999999)
+
+# x = 2
+# case x
+# when 1
+#   puts "1"
+# when 2
+#   puts "2"
+# end
+
+list = %w[go ruby js java]
+print list.size
+y = 0
+while y < list.size do
+  print "1#{list[y]}"
+  y += 1
+end
+y = 0
+until y == list.size do
+  print "2#{list[y]}"
+  y += 1
+end
+y = 0
+begin
+  print "3#{list[y]}"
+  y += 1
+end while y < list.size
