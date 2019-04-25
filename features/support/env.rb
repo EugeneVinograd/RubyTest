@@ -1,0 +1,7 @@
+require 'cucumber/formatter/unicode'
+require 'capybara'
+require 'capybara/dsl'
+require 'capybara/session'
+require 'selenium-webdriver'
+require 'capybara/cucumber'
+require 'capybara/mechanize/cucumber'
