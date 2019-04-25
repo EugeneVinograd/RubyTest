@@ -1,11 +1,12 @@
+class War
 def goodVsEvil(good,evil)
   goodMember = {
-    'hobbits:' => 1,
-    'men:' => 2,
-    'elves:' => 3,
-    'dwarves:' => 3,
-    'eagles:' => 4,
-    'wizards:' => 10
+      'hobbits:' => 1,
+      'men:' => 2,
+      'elves:' => 3,
+      'dwarves:' => 3,
+      'eagles:' => 4,
+      'wizards:' => 10
   }
   evilMember = {
       'hobbits:' => 1,
@@ -34,5 +35,7 @@ def goodVsEvil(good,evil)
     'Battle Result: No victor on this battle field'
   end
 end
+end
 
-goodVsEvil('1 2 3 4 5 6', '9 8 7 6 5 4 1')
+figth = War.new
+figth.goodVsEvil('1 2 3 4 5 6', '9 8 7 6 5 4 1')

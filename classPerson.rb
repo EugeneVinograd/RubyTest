@@ -20,3 +20,4 @@ abort "go" if str.nil? or str.empty?
 temp, scala = str.split(" ")
 abort "#{temp} недопустимое число." if temp !~ /-?\d+/
 temp = temp.to_f
+
